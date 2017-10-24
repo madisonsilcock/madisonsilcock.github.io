@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html{
+    box-sizing: border-box;
+}
+*, *:before;, *:after{
+    box-sizing:inherit;
+}
+
+p, li, a {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+}
+h1, h2, h3, h4 {
+    font-family: 'Robot', 'Arial', sans-serif;
+    color: #66cc33;
+}
+
+#topheader {
+    width: 100%;
+    background: #66cc33; /*light green */ 
+    color: white;
+    position: fixed;
+    top: 0px;
+    height: 7%;
+    text-align: right;
+    font-size: .9em;
+}
+#topheader p {
+    padding-right: 2%;
+}
+nav {
+    height: 25%;
+    
+}
+nav ul li { display: inline-block;
+    padding: 5% 1%;
+}
+nav ul li a{
+    font-size: 1em;
+    color: #336633;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:link, nav ul li a:visited,{
+    font-size: 1em;
+    color: #336633;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:#66cc33;
+}
+#fullimage div {
+    background-image:url(../../images/childplaying.jpg);
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    background-color: rgba(102, 204, 51, .5);
+    width: 200px;
+    margin: auto;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 1.2em;
+    border-radius: 20px;
+}
+
+#main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2%;
+    justify-content: space-between;
+}
