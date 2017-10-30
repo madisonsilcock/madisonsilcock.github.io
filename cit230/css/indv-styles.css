@@ -46,7 +46,8 @@ nav ul li a:hover{
     color:#66cc33;
 }
 #fullimage {
-    background-image: url("../images/childplaying.jpeg");
+    background-image:url("../images/childplaying.jpeg");
+    background-color: blue;
     height: 450px;
     text-align: center;
     background-repeat:no-repeat;
@@ -88,7 +89,7 @@ nav ul li a:hover{
 .row {
     display: flex;
     width: 100%;
-    flex: row wrap;
+    flex-flow: row wrap;
     align-content: space-between;
 }
 
