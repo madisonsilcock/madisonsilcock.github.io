@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-html{
-    box-sizing: border-box;
-}
-*, *:before;, *:after{
-    box-sizing:inherit;
-}
 
 p, li, a {
     font-family: 'Arial', sans-serif;
     font-size: 1em;
 }
 h1, h2, h3, h4 {
-    font-family: 'Robot', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     color: #66cc33;
 }
 
@@ -42,7 +36,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
 }
-nav ul li a:link, nav ul li a:visited,{
+nav ul li a:link, nav ul li a:visited{
     font-size: 1em;
     color: #336633;
     text-decoration: none;
@@ -51,12 +45,22 @@ nav ul li a:link, nav ul li a:visited,{
 nav ul li a:hover{
     color:#66cc33;
 }
-#fullimage div {
-    background-image:url(../../images/childplaying.jpg);
-    width: 100%;
+#fullimage {
+    background-image: url("../images/childplaying.jpg");
+    height: 450px;
     text-align: center;
+    background-repeat:no-repeat;
+    background-position: 100% 100%;
+    background-attachment:inherit;
+    
 }
-
+#text {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align:center;
+}
 .button {
     display: block;
     background-color: rgba(102, 204, 51, .5);
@@ -68,15 +72,30 @@ nav ul li a:hover{
     padding-top: 20px;
     font-size: 1.2em;
     border-radius: 20px;
+    text-align: center;
+}
+.button a {
+     color: white;
+    text-decoration: none;
+    
 }
 
 #main {
     margin-left: 10%;
     margin-right: 10%;
 }
-.services {
+
+.row {
     display: flex;
-    flex-flow: row wrap;
-    padding: 2%;
-    justify-content: space-between;
+    width: 100%;
+    flex: row wrap;
+    align-content: space-between;
+}
+
+.column {
+    width: 25%;
+    padding: 2%; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
