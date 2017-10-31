@@ -16,19 +16,21 @@ h1, h2, h3, h4 {
     color: white;
     position: fixed;
     top: 0px;
-    height: 7%;
+    height: 10%;
     text-align: right;
     font-size: .9em;
 }
 #topheader p {
     padding-right: 2%;
+  
 }
 nav {
     height: 25%;
     
 }
 nav ul li { display: inline-block;
-    padding: 5% 1%;
+    padding: 1.5% 1%;
+    
 }
 nav ul li a{
     font-size: 1em;
@@ -45,26 +47,24 @@ nav ul li a:link, nav ul li a:visited{
 nav ul li a:hover{
     color:#66cc33;
 }
-#fullimage {
+.fullimage {
     background-image:url("../images/childplaying.jpeg");
-    background-color: blue;
-    height: 450px;
-    text-align: center;
-    background-repeat:no-repeat;
-    background-position: 100% 100%;
-    background-attachment:inherit;
-    
+    background-size:cover;
+    background-position: center;
+    padding: 15%;
+    color: #ffffff;
+
+   
 }
-#text {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: center;
+#text h1 {
+    position: relative;
+    top: 30%;
     text-align:center;
+    color: white;
 }
 .button {
     display: block;
-    background-color: rgba(102, 204, 51, .5);
+    background-color: rgb(102, 204, 51);
     width: 200px;
     margin: auto;
     height: 40px;
@@ -74,7 +74,9 @@ nav ul li a:hover{
     font-size: 1.2em;
     border-radius: 20px;
     text-align: center;
+    
 }
+
 .button a {
      color: white;
     text-decoration: none;
@@ -88,15 +90,38 @@ nav ul li a:hover{
 
 .row {
     display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    align-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: space-between;
 }
 
-.column {
-    width: 25%;
-    padding: 2%; 
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.col {
+   width: 30%;
+    text-align: center;
+    
+   
+}
+.categories {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    vertical-align: center;
+    ;
+    
+   
+}
+.categories li {
+    background-color: #66cc33;
+    list-style: none;
+    width: 20%;
+    height: 100px;
+    vertical-align: center;
+    align-items: flex-end
+}
+.categories a{
+    text-decoration: none;
+    
+    
+    
+}
 }
