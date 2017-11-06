@@ -124,4 +124,17 @@ nav ul li a:hover{
     
     
 }
+.fullimage {
+    background-image:url("../images/childplaying.jpeg");
+    background-size:cover;
+    background-position: center;
+    padding: 15%;
+    color: #ffffff;}
+#contactfullimage {
+    background-image:url("../images/about.jpg");
+    background-size:cover;
+    background-position: center;
+    padding: 15%;
+    color: #ffffff;
+    
 }
