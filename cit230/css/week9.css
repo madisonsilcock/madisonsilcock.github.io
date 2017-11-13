@@ -1,6 +1,6 @@
  body {
             margin: 0;
-            background-image: url(images/garden.jpg);
+            background-image: url(../ponder-prove/images/garden.jpg);
             background-repeat: repeat-y;
             background-position: left;
             background-attachment: fixed;
@@ -9,17 +9,22 @@
         header {
             border: solid thin;
             line-height: 50%;
+            background-image: url(../ponder-prove/images/stones2133.jpg);
+            background-size:cover;
+    background-position: center;
+    color: #ffffff;
         }
 
         nav {
             color: #00FF00;
-            background-color: rgba(247, 209, 210, .5);
+            background-color: yellow;
             border: solid thin green;
             text-indent: 50px;
         }
 
         nav ol {
-            text-align: center
+            text-align: center;
+            
         }
 
         nav ol#rocks li {
@@ -189,7 +194,29 @@
             bottom: 0px;
         }
 
-        /*apply colors to look like ppt*/
+.col {
+   display: inline-block;
+   width: 30%;
+    vertical-align: top;
+    text-align: center;
+    padding: 1.5%;
+
+    
+}
+#firstcol {
+    background-color: red;
+    
+}
+#secondcol {
+    background-color: green;
+    
+}
+#thirdcol {
+    background-color: blue;
+}  
+footer {
+    background-color:#0CF;
+}/*apply colors to look like ppt*/
 
         /*
             header {background-color:#9F9;} 
@@ -204,4 +231,4 @@
 
         /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
 
-    </style>
+   

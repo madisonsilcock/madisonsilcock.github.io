@@ -16,20 +16,24 @@ h1, h2, h3, h4 {
     color: white;
     position: fixed;
     top: 0px;
-    height: 10%;
+    height: 3.5%;
     text-align: right;
     font-size: .9em;
 }
 #topheader p {
     padding-right: 2%;
+    margin-top: .5%;
   
 }
 nav {
     height: 25%;
+    width: 100%;
+    text-align: center;
     
 }
 nav ul li { display: inline-block;
     padding: 1.5% 1%;
+    width: 100%;
     
 }
 nav ul li a{
@@ -95,12 +99,7 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 
-.col {
-   width: 30%;
-    text-align: center;
-    
-   
-}
+
 .categories {
     display: flex;
     flex-wrap: nowrap;
@@ -137,4 +136,78 @@ nav ul li a:hover{
     padding: 15%;
     color: #ffffff;
     
+}
+@media screen and (max-width: 800px) {
+    .col {
+        width:100%;
+        padding: 5%;
+     }
+
+    #links {
+    display: none;
+}
+
+#toggle:checked ~ #links {
+    display: block;
+}
+
+#toggle {
+    display: none;
+}
+#menu {
+    text-align: center;
+    padding: 3%;
+    padding-top: 5%;
+    font-size: 1em;
+    color: #336633;
+    text-decoration: none;
+    font-weight: bold;
+    }
+}
+@media screen and (min-width: 800px) {
+    label{
+        display: none;
+    }
+    #toggle {
+        display: none;
+    }
+    nav {
+    height: 25%;
+    width: 100%;
+    
+}
+nav ul li { display: inline-block;
+    padding: 1.5% 1%;
+    
+}
+nav ul li a{
+    font-size: 1em;
+    color: #336633;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:link, nav ul li a:visited{
+    font-size: 1em;
+    color: #336633;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:#66cc33;
+}
+.fullimage {
+    background-image:url("../images/childplaying.jpeg");
+    background-size:cover;
+    background-position: center;
+    padding: 15%;
+    color: #ffffff;
+
+   
+}
+    .col {
+   width: 30%;
+    text-align: center;
+    
+   
+}
 }
