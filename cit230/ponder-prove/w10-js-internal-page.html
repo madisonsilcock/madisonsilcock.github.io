@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>index.html</title>
-<link href= "cit230/css/indv-styles.css" type="text/css" rel="stylesheet">
+<link href= "../cit230/css/indv-styles.css" type="text/css" rel="stylesheet">
 <script type="text/javascript">
 function pestQuote() {
     var text = document.getElementById("sqFeet").value; 
@@ -18,11 +18,7 @@ function pestQuote() {
          
          window.alert("Hello " + document.getElementById("name").innerHTML = text);
         }
-    function myChangeFont() {
-            var x = document.getElementById("number");
-            x.style.fontsize="25px";
-            x.style.color"#66cc33";
-    }
+    
 }</script>
 </head>
 
@@ -48,8 +44,7 @@ function pestQuote() {
 
     <h1> Contact Us</h1>
     <p>We want to hear from you! To get a free quote today, call us at (205) 326-7720.</p>
-    Please enter your name: <input type="text" id="enterName"> <button type="button" onclick="myDisplayName()">Enter</button>
-    <div id="name"></div>
+   
     Enter total square feet of property: <input type="text" id="sqFeet"><br>
     <button type="button" onclick="pestQuote()">Get Quote</button>
     <div id="quote"></div>
