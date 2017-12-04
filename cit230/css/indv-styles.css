@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
     height: 3.5%;
     text-align: right;
     font-size: .9em;
+    z-index: 1;
 }
 #topheader p {
     padding-right: 2%;
@@ -86,17 +87,29 @@ nav ul li a:hover{
     text-decoration: none;
     
 }
+ #menu {
+        padding-top: 4%;
+        text-align: center;
+    }
 
 #main {
-    margin-left: 10%;
-    margin-right: 10%;
+   
 }
 
 .row {
-    display: flex;
+    display: inline-block;
     margin-top: 5%;
     margin-bottom: 5%;
-    justify-content: space-between;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.col {
+    display: inline-block;
+    width: 28%;
+   text-align: center;
+    
 }
 
 
@@ -137,6 +150,62 @@ nav ul li a:hover{
     color: #ffffff;
     
 }
+#pestfree {
+    text-align: center;
+    padding: 5%;
+    background-color:#66cc33;
+}
+#pestfree h1 {
+    text-align: center;
+    color: black;
+    
+}
+#pestfree p {
+    color: white;
+    
+}
+footer img {
+    width: 40px;
+}
+
+#areas {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    
+}
+#areas a {
+    text-align: left;
+    padding: 1%;
+    line-height: 2em;
+    color: black;
+}
+#locations {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+footer {
+    background-color: #66cc33;
+    
+}
+footer h2 {
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     .col {
         width:100%;
@@ -154,6 +223,7 @@ nav ul li a:hover{
 #toggle {
     display: none;
 }
+    
 #menu {
     text-align: center;
     padding: 3%;
@@ -163,6 +233,28 @@ nav ul li a:hover{
     text-decoration: none;
     font-weight: bold;
     }
+    nav img {
+        display: none;
+    }
+    #topheader {
+        height: 25px;
+    }
+    .col1 {
+    width: 100%;
+     display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+.col2 {
+    width: 100%;
+     display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+}
+    
 }
 @media screen and (min-width: 800px) {
     label{
@@ -171,14 +263,18 @@ nav ul li a:hover{
     #toggle {
         display: none;
     }
+    
     nav {
-    height: 25%;
     width: 100%;
     
 }
-nav ul li { display: inline-block;
+    nav ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+nav ul li { 
     padding: 1.5% 1%;
-    
+    display: inline;
 }
 nav ul li a{
     font-size: 1em;
@@ -195,6 +291,7 @@ nav ul li a:link, nav ul li a:visited{
 nav ul li a:hover{
     color:#66cc33;
 }
+   
 .fullimage {
     background-image:url("../images/childplaying.jpeg");
     background-size:cover;
@@ -205,9 +302,35 @@ nav ul li a:hover{
    
 }
     .col {
-   width: 30%;
+   width: 28%;
     text-align: center;
+        padding: 2%;
+    vertical-align: top;
+   
     
    
 }
+    
+    .row {
+      
+         margin-left: 5%;
+        margin-right: 5%;
+    }
+    #topheader {
+        height: 30px;
+    }
+    .col1 {
+    width: 40%;
+     display: inline-block;
+    vertical-align: top;
+}
+.col2 {
+    width: 40%;
+     display: inline-block;
+}
+#map {
+    width: 100%;
+    height: 300px;
+}
+   
 }
