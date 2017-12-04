@@ -92,8 +92,9 @@ nav ul li a:hover{
         text-align: center;
     }
 
-#main {
-   
+main {
+   margin-right: 5%;
+    margin-left: 5%;
 }
 
 .row {
@@ -202,9 +203,24 @@ footer a {
     color: white;
     text-decoration: none;
 }
+#aboutimg {
+    width: 100%;
+}
 
-
-
+#aboutlinks ul {
+    width: 100%;
+    text-align: center;
+}
+#aboutlinks ul li {
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%
+    
+}
+#aboutlinks ul li a {
+    color: black;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 800px) {
     .col {
