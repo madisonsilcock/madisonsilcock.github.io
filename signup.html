@@ -24,19 +24,29 @@
         </nav>
     </header>
     <main>
-    <h1>Our Services</h1>
-    <div id="services">
-    <div class="col">
-        <a href="residential.html"><br><img src ="images/residential.jpeg" alt="residential"><h2>Residential</h2></a><p>Protect your home, family, and pets with our residential pest treatment.</p></div>
-        <div class="col">
-        <a href="commercial.html"><br><img src="images/commercial.jpeg" alt="commercial"><h2>Commercial</h2></a>
-        <p>We help you take care of  business. You have enough to worry about, we take care of the pests at your workplace.</p>
-            </div>
-       <div class="col"><a href="termites.html"><br><img src="images/termites.jpeg"><h2>Termites</h2></a>
-        <p>Need a termite service to accompany your regular treatments? We've got you covered.</p></div>
-        </div>
+    <h1> Sign Up Today</h1>
+    <p>Sold on our service? We'd love to have you as a customer. To sign up, fill out the following form or call us at (205) 326-7720 and we will set up your service schedule.</p>
+    
+    <form id="contactForm">
+    Name: <input class="info" type="text" name="contactName"><br>
+    Phone Number: <input class="info"  type="text" name="contactNumber"><br>
+    Email: <input class="info" type="text" name="contactEmail"><br>
+        Address: <input class="info" type="text" name="contactAddress"><br>
+        Preferred service dates: <br>
+       Mon <input type="checkbox" id="mon"> Tues <input type="checkbox" id="tues"> Wed <input type="checkbox" id="wed"> Thurs <input type="checkbox" id="thurs"> Fri <input type="checkbox" id="fri"> Sat <input type="checkbox" id="sat">
+    <br>
+    <br>
+    <input id="formbutton" type="button" onclick="getQuote()"value="Submit"></form>
+    <script>
+    function getQuote() {
+    document.getElementById("contactForm").submit();
+    }</script>
+          
+    
+    <p>Want to learn more about what our customers are saying about us? Check out our reviews <a href="reviews.html">here</a> </p>
     </main>
-       <footer> <div class="col">
+
+   <footer> <div class="col">
    	<a href="https://www.facebook.com/NatureWisePest/"><img src="images/socialmedia_facebook.png" alt="Facebook"></a>
    	<a href ="twitter.com/NatureWisePest"><img src="images/socialmedia_twitter.png" alt="Twitter"></a>
    	<a href="instagram.com/naturewisepestcontrol"><img src="images/socialmedia_instagram.png" alt="Instagram"></a>

@@ -85,7 +85,7 @@ nav ul li a:hover{
 .button a {
      color: white;
     text-decoration: none;
-    
+   
 }
  #menu {
         padding-top: 4%;
@@ -158,7 +158,7 @@ main {
 }
 #pestfree h1 {
     text-align: center;
-    color: black;
+    color: white;
     
 }
 #pestfree p {
@@ -166,9 +166,26 @@ main {
     
 }
 footer img {
-    width: 40px;
+    width: 25px;
+    padding: 2%;
+}
+footer h2 {
+    color: white;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 1.5em;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
 }
 
+footer .col  {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px
+}
 #areas {
     margin-left: 5%;
     margin-right: 5%;
@@ -185,6 +202,7 @@ footer img {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 #map {
@@ -194,14 +212,24 @@ footer img {
 
 footer {
     background-color: #66cc33;
+    height: 200px;
     
 }
 footer h2 {
     color: white;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 1.5em;
+   margin-top: -1px;
 }
 footer a {
     color: white;
     text-decoration: none;
+    font-size: 15px;
+}
+footer .col  {
+    display: inline-block;
+    vertical-align: top;
 }
 #aboutimg {
     width: 100%;
@@ -222,23 +250,141 @@ footer a {
     font-weight: bold;
 }
 
+
+
+#services .col h2, #services .col a{
+   color: white;
+}
+#services .col {
+    display: inline-block;
+    background-color: #66cc33; 
+    width: 100%;
+    color: white;
+}
+#res-services {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+#res-services .col{
+   width: 90%;
+    text-align: center;
+    border: solid;
+    border-color: #66cc33;
+    padding-bottom: 5%;
+
+}
+#res-services li {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+#res-services a {
+    color: #66cc33;
+    font-weight: bold;
+}
+#locations a:link {
+    color: black;
+}
+#locations a:hover {
+    color: #66cc33;
+}
+form{
+    border: solid;
+    border-width: 1px;
+    width: 90%;
+    padding: 2%;
+    font-family: 'Roboto';
+    font-size: .75em;
+    color: gray;
+}
+.info {
+   width: 100%;
+    height: 1.5em;
+    margin-bottom: 2%;
+    
+}
+#formbutton {
+    width: 100px;
+    height: 30px;
+    background-color: #cccccc;
+    color: white;
+    
+}
+#formbutton:link {
+    width: 100px;
+    height: 30px;
+    background-color: #cccccc;
+    color: white;
+    
+}
+#formbutton:active {
+    width: 100px;
+    height: 30px;
+    background-color: #66cc33;
+    color: white;
+    
+}
+
+.review {
+    margin: 5%;
+    font-family: 'Arial';
+   
+}
+.review-2 {
+    background-color: #cccccc;
+    padding: 3%;
+    
+}
+.review::before {
+    content: '"';
+    color: #66cc33;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1%;
+}
+.review::after {
+    content: '"';
+    color: #66cc33;
+    font-size: 2em;
+    font-weight: bold;
+     padding: 1%;
+}
+.idphotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 3%;
+    
+    
+}
+.idphotos a:link {
+    color: black;
+    text-align: center;
+}
+
+.idphotos a:hover {
+    color: #66cc33;
+    text-align: center;
+}
+
+.idphotos img:link {
+    opacity: 1;
+}
+.idphotos img:hover {
+    opacity: .5;
+
+}
+.wikiphoto { 
+padding: 1%;}
 @media screen and (max-width: 800px) {
     .col {
         width:100%;
         padding: 5%;
      }
 
-    #links {
-    display: none;
-}
+  
 
-#toggle:checked ~ #links {
-    display: block;
-}
-
-#toggle {
-    display: none;
-}
     
 #menu {
     text-align: center;
@@ -270,15 +416,18 @@ footer a {
     margin-right: 5%;
     padding-top: 3%;
 }
+  #services {
+   width: 70%;
+    text-align: center;
+    margin: 4%;
+    margin: auto;
+    padding-bottom: 5%;
+  
+}  
     
 }
 @media screen and (min-width: 800px) {
-    label{
-        display: none;
-    }
-    #toggle {
-        display: none;
-    }
+    
     
     nav {
     width: 100%;
@@ -348,5 +497,102 @@ nav ul li a:hover{
     width: 100%;
     height: 300px;
 }
-   
+    #services .col {
+    background-color: #66cc33; 
+    width: 250px;
+    height: 375px;
+        
+}
+     
+    
+    #services {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-bottom: 3%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    #res-services {
+         display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-bottom: 3%;
+        padding-right: 5%;
+        padding-left: 5%;
+        
+       
+    }
+    #res-services ul{
+        text-align: left;
+        line-height: 1.5em;
+        
+    }
+    #res-services .col {
+         width: 250px;
+        margin: auto;
+        height: 325px;
+        border: solid;
+        border-color: #66cc33;
+    }
+    form{
+    border: solid;
+    border-width: 1px;
+    width: 60%;
+    padding: 2%;
+    font-family: 'Roboto';
+    font-size: .75em;
+    color: gray;
+}
+.info {
+   width: 100%;
+    height: 1.5em;
+    margin-bottom: 2%;
+    
+}
+#formbutton {
+    width: 100px;
+    height: 30px;
+    background-color: #cccccc;
+    color: white;
+    
+}
+#formbutton:link {
+    width: 100px;
+    height: 30px;
+    background-color: #cccccc;
+    color: white;
+    
+}
+#formbutton:active {
+    width: 100px;
+    height: 30px;
+    background-color: #66cc33;
+    color: white;
+    
+}
+footer {
+    background-color: #66cc33;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+    footer h2 {
+    color: white;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 1.5em;
+   margin-top: -1px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+footer .col  {
+    display: inline-block;
+}
+
 }
